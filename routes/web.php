@@ -8,9 +8,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return 'Main Page';
 // });
-Route::get('/', function () {
-    return view('index');
-});
+
 
 Route::get('/hello',function(){
     return 'Hello';
@@ -32,3 +30,15 @@ Route::fallback(function(){
 //POST
 //PUT
 //DELETE
+
+
+
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', function () {
+    return view('index',[
+        'name'=>'osama'
+        // 'name'=>'<br>osama</br>'
+    ]);
+});
