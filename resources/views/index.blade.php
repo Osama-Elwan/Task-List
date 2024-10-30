@@ -1,8 +1,10 @@
-<h1>
+@extends('layouts.app')
+@section('title' , 'The list of tasks')
+{{-- <h1> --}}
 
     {{-- Hello Im a blade template --}}
-    The list of tasks
-</h1>
+    {{-- The list of tasks --}}
+{{-- </h1> --}}
 {{-- @isset($name)
 <div>
 
@@ -22,7 +24,7 @@
         {{-- <div>there are no tasks</div> --}}
     {{-- @endif --}}
 {{-- </div> --}}
-
+@section('content')
 <div>
 
 
@@ -41,3 +43,4 @@
 
 
 </div>
+@endsection
